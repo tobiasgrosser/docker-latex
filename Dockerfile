@@ -2,7 +2,6 @@ FROM ubuntu:trusty
 MAINTAINER Tobias Grosser <dockerimage@grosser.es>
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN apt-get update -q && apt-get -y dist-upgrade
 RUN apt-get install -qy texlive-latex-base texlive-lang-spanish \
                         texlive-binaries texlive-latex-extra xindy \
                         texlive-science  texlive-full \
