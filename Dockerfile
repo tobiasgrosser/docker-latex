@@ -2,7 +2,7 @@ FROM ubuntu:trusty
 MAINTAINER Tobias Grosser <dockerimage@grosser.es>
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN apt-get install -qy texlive-latex-base texlive-lang-spanish \
+RUN apt-get install -qy texlive-latex-base \
                         texlive-binaries texlive-latex-extra xindy \
                         texlive-science  texlive-full \
                         texlive-fonts-recommended python-pygments gnuplot
