@@ -3,9 +3,9 @@ MAINTAINER Tobias Grosser <dockerimage@grosser.es>
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get install -qy texlive-latex-base \
-                        texlive-binaries texlive-latex-extra xindy \
+                        texlive-binaries texlive-latex-extra \
                         texlive-science  texlive-full \
-                        texlive-fonts-recommended python-pygments gnuplot
+                        texlive-fonts-recommended python-pygments
 
 RUN apt-get remove -y texlive-latex-base-doc texlive-latex-recommended-doc \
                      texlive-latex-extra-doc texlive-fonts-recommended-doc \
