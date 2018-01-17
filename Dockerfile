@@ -7,7 +7,8 @@ RUN apt-get -qy install --no-install-recommends texlive-latex-base \
      texlive-binaries texlive-science texlive-latex-extra \
      texlive-generic-extra \
      texlive-fonts-recommended ninja-build make \
-     latexmk python-pygments
+     latexmk python-pygments texlive-fonts-extra
+
 
 RUN apt-get -y clean && \
     rm -rf /var/lib/apt/lists/* && \
