@@ -1,4 +1,4 @@
-FROM ubuntu:17.04
+FROM ubuntu:17.10
 MAINTAINER Tobias Grosser <dockerimage@grosser.es>
 ENV DEBIAN_FRONTEND noninteractive
 
