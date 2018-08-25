@@ -4,7 +4,10 @@ ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update
 RUN apt-get -qy install --no-install-recommends \
-     ninja-build make latexmk python-pygments texlive-full
+     ninja-build make latexmk python-pygments texlive-full asciidoc-base
+RUN git clone https://gitlab.com/git-latexdiff/git-latexdiff.git
+RUN cd git-latexdiff
+RUN make install
 
 
 RUN apt-get -y clean && \
